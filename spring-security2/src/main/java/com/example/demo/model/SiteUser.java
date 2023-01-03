@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.example.demo.util.Authority;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -32,6 +34,8 @@ public class SiteUser {
 	private boolean admin;
 	
 	private String role;
+	
+	private Authority authority;
 	
 	private boolean active = true;
 
